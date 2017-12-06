@@ -4,10 +4,19 @@
   "description": "RDBMS API Mini Sprint",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js --exec babel-node --presets es2015,stage-2"
   },
   "author": "Lambda School",
   "license": "ISC",
   "dependencies": {
+    "knex": "^0.14.2",
+    "mysql": "^2.15.0",
+    "sequelize": "^4.27.0",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
